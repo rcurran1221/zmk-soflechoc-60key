@@ -55,6 +55,14 @@
     };
 
     behaviors {
+        shifty: shifty {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SHIFTY";
+            bindings = <&sticky_shift LEFT_SHIFT>, <&caps_word>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT)>;
+        };
         caps: caps {
             compatible = "zmk,behavior-caps-word";
             label = "CAPS";
