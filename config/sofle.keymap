@@ -15,6 +15,14 @@
 #define ADJUST 3
 #define extra_layer 4
 
+#define SHORT_COMBO_TIMEOUT 18
+#define COMBO_TIMEOUT_LEFT 18
+#define PRIOR_IDLE_COMBO 150
+#define HOME_ROW_MOD_IDLE 150
+#define MOD_FLAVOR "balanced"
+#define MOD_TAP_TERM 280
+#define MOD_QUICK_TAP 200
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
