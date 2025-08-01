@@ -53,6 +53,36 @@
             #binding-cells = <0>;
             continue-list = <POUND MINUS BACKSPACE UNDERSCORE>;
         };
+
+        hml: hml {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HML";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <MOD_TAP_TERM>;
+            hold-trigger-on-release;
+            quick-tap-ms = <MOD_QUICK_TAP>;
+            require-prior-idle-ms = <HOME_ROW_MOD_IDLE>;
+            flavor =
+            MOD_FLAVOR;
+            hold-trigger-key-positions = <55 56 57 73 74 72 79 78 62 63 45 44 33 32 21 20 9 8 7 19 31 43 77 76 60 61 42 30 18 6 5 17 29 41 75 58 40 59 28 16 52 53 54 71 70 69>;
+        };
+
+        hmr: hmr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HMR";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <MOD_TAP_TERM>;
+            hold-trigger-on-release;
+            quick-tap-ms = <MOD_QUICK_TAP>;
+            require-prior-idle-ms = <HOME_ROW_MOD_IDLE>;
+            flavor =
+            MOD_FLAVOR;
+            hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 49 67 66 36 24 12 2 1 11 23 35 47 48 65 64 46 34 22 10 0 55 56 57 74 73 72>;
+        };
     };
 
     keymap {
