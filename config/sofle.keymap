@@ -54,6 +54,15 @@
     };
 
     behaviors {
+        sticky_shift: sticky_shift {
+            compatible = "zmk,behavior-sticky-key";
+            label = "STICKY_SHIFT";
+            bindings = <&sk>;
+            #binding-cells = <1>;
+            release-after-ms = <300>;
+            quick-release;
+        };
+
         shifty: shifty {
             compatible = "zmk,behavior-mod-morph";
             label = "SHIFTY";
