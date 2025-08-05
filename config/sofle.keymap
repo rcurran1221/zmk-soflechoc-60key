@@ -143,11 +143,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&gresc            &kp N1           &kp N2           &kp N3               &kp N4             &kp N5                               &kp N6     &kp N7              &kp N8                &kp N9            &kp N0                    &kp MINUS
-&kp DELETE        &kp Q            &kp W            &kp E                &kp R              &kp T                                &kp Y      &kp U               &kp I                 &kp O             &kp P                     &kp BSPC
-&gresc            &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
-&kp LEFT_CONTROL  &layer_left 1 Z  &kp X            &kp C                &kp V              &kp B      &shifty    &shifty        &kp N      &kp M               &kp COMMA             &kp DOT           &layer_right 1 SLASH      &to 5
-                                   &kp A            &kp LEFT_ARROW       &kp RIGHT          &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp RCTRL           &kp UP_ARROW          &kp DOWN_ARROW
+&gresc      &kp N1           &kp N2           &kp N3               &kp N4             &kp N5                               &kp N6     &kp N7              &kp N8                &kp N9            &kp N0                    &kp MINUS
+&kp DELETE  &kp Q            &kp W            &kp E                &kp R              &kp T                                &kp Y      &kp U               &kp I                 &kp O             &kp P                     &kp BSPC
+&gresc      &hml LEFT_GUI A  &hml LEFT_ALT S  &hml LEFT_CONTROL D  &hml LEFT_SHIFT F  &kp G                                &kp H      &hmr RIGHT_SHIFT J  &hmr RIGHT_CONTROL K  &hmr RIGHT_ALT L  &hmr RIGHT_GUI SEMICOLON  &kp SQT
+&to 3       &layer_left 1 Z  &kp X            &kp C                &kp V              &kp B      &shifty    &shifty        &kp N      &kp M               &kp COMMA             &kp DOT           &layer_right 1 SLASH      &to 5
+                             &kp A            &kp LEFT_ARROW       &kp RIGHT          &kp ENTER  &kp TAB    &kp BACKSPACE  &kp SPACE  &kp UP_ARROW        &kp DOWN_ARROW        &kp DOWN_ARROW
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -211,7 +211,7 @@
 &bt BT_CLR_ALL     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &none  &none  &none  &none  &none  &none
 &ext_power EP_TOG  &none         &none         &none         &none         &studio_unlock                  &none  &none  &none  &none  &none  &none
 &none              &none         &none         &none         &none         &none                           &none  &none  &none  &none  &none  &none
-&none              &none         &none         &none         &none         &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
+&to 0              &none         &none         &none         &none         &caps_word      &none    &none  &none  &none  &none  &none  &none  &none
                                  &none         &none         &none         &none           &none    &none  &none  &none  &none  &none
             >;
 
