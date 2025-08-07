@@ -135,7 +135,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        o {
             display-name = "0";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -156,7 +156,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        symbol {
+        sym {
             display-name = "sym";
 
             // TODO: Some binds are waiting for shifted keycode support.
@@ -180,7 +180,7 @@
                 <&inc_dec_kp UP_ARROW DOWN_ARROW>;
         };
 
-        raise_layer {
+        r {
             display-name = "r";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -221,7 +221,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        mouse {
+        m {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
@@ -229,7 +229,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "x";
+            display-name = "m";
             bindings = <
 &none  &none  &none  &none  &none  &none                           &none  &none           &none           &none            &none  &none
 &none  &none  &none  &none  &none  &studio_unlock                  &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none  &none
@@ -241,8 +241,8 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        gaming {
-            display-name = "game";
+        g {
+            display-name = "g";
             bindings = <
 &kp ESCAPE  &kp N1  &kp N2          &kp N3             &kp N4            &kp N5                                        &kp F1     &kp F2     &kp F3     &kp F4    &kp F5    &kp F6
 &kp TAB     &kp Q   &kp W           &kp E              &kp R             &kp T                                         &kp Y      &kp U      &kp I      &kp O     &kp P     &kp BSPC
