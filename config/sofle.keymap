@@ -34,11 +34,13 @@
         b {
             bindings = <&kp BACKSPACE>;
             key-positions = <19 20>;
+            layers = <0>;
         };
 
         t {
             bindings = <&kp TAB>;
             key-positions = <16 15>;
+            layers = <0>;
         };
     };
 
