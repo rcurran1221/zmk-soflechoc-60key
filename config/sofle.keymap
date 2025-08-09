@@ -134,7 +134,7 @@
             #binding-cells = <0>;
             flavor = "hold-preferred";
             tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT &caps_word>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
         };
 
         td_shift_capsword: td_shift_capsword {
@@ -142,7 +142,7 @@
             label = "TD Sticky Shift / Caps Word";
             #binding-cells = <0>;
             tapping-term-ms = <200>; // Adjust for your typing speed
-            bindings = <&sk LSHIFT &caps_word>;
+            bindings = <&sk LSHIFT>, <&caps_word>;
         };
     };
 
