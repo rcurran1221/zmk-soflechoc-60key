@@ -128,15 +128,6 @@
             hold-trigger-key-positions = <54 71 70 53 52 69 68 51 50 38 39 27 26 14 4 15 3 13 25 37 67 66 36 24 12 2 1 65 64 0 74 73 72 4 5 16 17 28 29 41 40 41 42 43 55 56>;
         };
 
-        shift_capsword: shift_capsword {
-            compatible = "zmk,behavior-hold-tap";
-            label = "Sticky Shift / Caps Word";
-            #binding-cells = <0>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&sk LSHIFT>, <&caps_word>;
-        };
-
         td_shift_capsword: td_shift_capsword {
             compatible = "zmk,behavior-tap-dance";
             label = "TD Sticky Shift / Caps Word";
