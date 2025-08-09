@@ -23,6 +23,9 @@
 #define MOD_TAP_TERM 280
 #define MOD_QUICK_TAP 200
 
+ 
+    &sk {quick-release;}
+
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -136,9 +139,6 @@
             bindings = <&sk LSHIFT>, <&caps_word>;
         };
     };
-
-    &sk {quick-release;}
-
     keymap {
         compatible = "zmk,keymap";
 
