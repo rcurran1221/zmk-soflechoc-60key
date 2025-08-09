@@ -24,7 +24,7 @@
 #define MOD_QUICK_TAP 200
 
  
-    &sk {quick-release;}
+    &sk {quick-release;};
 
 / {
     // Activate ADJUST layer by pressing raise and lower
