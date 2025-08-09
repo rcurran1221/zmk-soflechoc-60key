@@ -137,6 +137,8 @@
         };
     };
 
+    &sk {quick-release;}
+
     keymap {
         compatible = "zmk,keymap";
 
