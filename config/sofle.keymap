@@ -134,7 +134,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD Sticky Shift / Caps Word";
             #binding-cells = <0>;
-            tapping-term-ms = <200>; // Adjust for your typing speed
+            tapping-term-ms = <300>; // Adjust for your typing speed
             bindings = <&sk LSHIFT>, <&caps_word>;
         };
     };
