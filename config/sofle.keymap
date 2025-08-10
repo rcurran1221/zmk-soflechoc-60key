@@ -39,9 +39,9 @@
             layers = <0>;
         };
 
-        t {
-            bindings = <&kp TAB>;
-            key-positions = <16 15>;
+        tab {
+            bindings = <&hml LS(LEFT_CONTROL) TAB>;
+            key-positions = <28 27>;
             layers = <0>;
         };
     };
