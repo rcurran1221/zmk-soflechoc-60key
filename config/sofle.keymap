@@ -137,12 +137,20 @@
             tapping-term-ms = <300>; // Adjust for your typing speed
             bindings = <&sk LSHIFT>, <&caps_word>;
         };
+
+        td_layer_num: td_layer_num {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_LAYER_NUM";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&sl 1>, <&to 6>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        o {
+        base {
             display-name = "0";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -228,7 +236,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        m {
+        mouse {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
@@ -248,7 +256,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        g {
+        game {
             display-name = "g";
             bindings = <
 &kp ESCAPE  &kp N1  &kp N2          &kp N3             &kp N4            &kp N5                                        &kp F1     &kp F2     &kp F3     &kp F4    &kp F5    &kp F6
@@ -263,13 +271,13 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        layer_6 {
+        num {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N0  &trans  &trans
             >;
         };
     };
