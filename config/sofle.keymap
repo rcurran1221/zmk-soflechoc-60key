@@ -151,7 +151,7 @@
         compatible = "zmk,keymap";
 
         base {
-            display-name = "0";
+            display-name = "base";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -244,7 +244,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            display-name = "m";
+            display-name = "mouse";
             bindings = <
 &none  &none  &none  &none  &none  &none                           &none  &none           &none           &none            &none  &none
 &none  &none  &none  &none  &none  &studio_unlock                  &none  &mkp MB1        &mmv MOVE_UP    &mkp MB2         &none  &none
@@ -279,6 +279,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
                 &trans  &trans  &trans  &trans  &to 0     &trans  &trans  &kp N0  &trans  &trans
             >;
+
+            label = "number";
         };
     };
 };
