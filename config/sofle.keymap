@@ -36,7 +36,7 @@
         b {
             bindings = <&hmr RS(RIGHT_CONTROL) BACKSPACE>;
             key-positions = <31 32>;
-            layers = <0 6>;
+            layers = <0 6 1>;
         };
 
         tab {
