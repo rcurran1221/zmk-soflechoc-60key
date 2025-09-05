@@ -63,6 +63,7 @@
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT)>;
+            quick-release;
         };
 
         caps: caps {
