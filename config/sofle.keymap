@@ -62,8 +62,7 @@
             bindings = <&sticky_shift LEFT_SHIFT>, <&caps_word>;
 
             #binding-cells = <0>;
-            mods = <(MOD_LSFT)>;
-            quick-release;
+            mods = <(MOD_LSFT)>;    
         };
 
         caps: caps {
